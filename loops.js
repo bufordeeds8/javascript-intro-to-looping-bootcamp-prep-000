@@ -7,13 +7,24 @@ function forLoop(array) {
      }
   }
   return array;
+}
 
-let countdown = n;
+ function whileLoop(n) {
+  let countdown = n;
 
-function whileLoop(n) {
-  while (n > 0) {
-    console.log(--countdown);
-    } else {
-    return 'done'
+     while (countdown > 0) {
+      console.log(--countdown)
+    }
+    return "done";
   }
+
+ function doWhileLoop(array) {
+  function maybeTrue() {
+    return Math.random() >= 0.5
+  }
+
+   do {
+    array.pop();
+  } while (array.length > -1 && maybeTrue());
+    return array;
 }
