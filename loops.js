@@ -6,5 +6,5 @@ function whileLoop(n) {
     }
   else {
     return 'done'
-  }  
+  }
 }
